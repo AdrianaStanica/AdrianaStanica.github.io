@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src='bootstrap/js/bootstrap.min.js'></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Ajutor pentru programatori</title>
+
+  </head>
+
+  <body>
+
+    <div class="modal fade" id="mymodal" tabindex="-1" aria-labelledby="mymodallabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col">
+                    <div class="modal-header" style="background-color: #92E3A9;">
+                        <h5 class="modal-title" id="mymodallabel" style="font-family: Merriweather; font-style: normal; font-weight: bold; font-size: 16px;">Exprimă-ți frustrările</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form" id="form" autocomplete="off">
+
+                            <div class="form-group">
+
+                                <select class="form-control" name="materii" id="materii">
+                                    <option>
+                                        Alege materia
+                                    </option>
+                                    
+                                </select>
+                                
+                                <br>
+                                
+                                <input type="text" class="form-control" id="titluProiect" name="titluProiect" placeholder="Titlul proiectului" required><br>
+                                
+                                
+                            </div>
+                        </form>
+                        <button type="button" id="btnAdd" class="btn btn-lg mx-auto d-block" style="background: #263238; color: #92E3A9; font-family: Merriweather; font-style: normal; font-weight: bold; font-size: 16px">Încarcă</button>
+                    </div>
+                </div>
+          
+          </div>
+
+          <div class="row">
+            <div class="col">
+                <div class="py-3 pl-3" style="background-color: #92E3A9;">
+                    <h5 class="modal-title" id="mymodallabel1" style="font-family: Merriweather; font-style: normal; font-weight: bold; font-size: 16px;">Plângeri introduse până acum</h5>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+                <div>
+                    <ul id="dynamic-list">
+                        
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="padding: 0 !important">
+
+        <div class="container-fluid" style="padding-left: 4rem !important; padding-top: 4rem !important">
+
+            <div class="row">
+
+                <div class="col-sm-2 px-5">
+
+                     <img src="images/logo.svg" alt="logo">
+               
+                </div>
+
+                <div class="col-sm-6">
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <button type="button" class="btn btn-lg py-1" style="background: #263238; color: #92E3A9; font-family: Merriweather;font-style: normal; font-weight: bold; font-size: 16px;">Logare</button>
+                    <button type="button" class="btn btn-lg py-1" style="font-family: Merriweather; font-style: normal; font-weight: 300; font-size: 16px;">Creare cont</button>
+                    <button type="button" class="btn btn-lg py-1" style="font-family: Merriweather; font-style: normal; font-weight: 300;font-size: 16px;">Contact</button>
+
+                </div>
+
+            </div>
+
+             <div class="row py-5">
+
+                <div class="col-sm-12 col-lg-6 p-5 mx-auto d-block">
+                    <div class="pb-3 pt-5">
+                         <h1 style="font-family: Merriweather; font-style: normal; font-weight: 900; font-size: 40px;">
+                            Cumpăratul de teme nu a fost niciodată mai simplu!
+                         </h1>
+                    </div>
+                   
+                   <div class="py-5" style="font-family: Roboto; font-weight: 300; font-style: normal; font-size: 16px">
+                       <h6>Platforma ideala pentru studenții de la Politehnică cu portofele pline, care au nevoie urgent de un înger care să le repare nota de intrare în examen.</h6>
+                   </div>
+                    
+
+                        <button type="button" class="btn btn-lg py-2 mr-3" data-toggle="modal" data-target="#mymodal"style="background: #263238; color: #92E3A9; font-family: Merriweather; font-style: normal; font-weight: bold; font-size: 16px;">Vreau să cumpăr</button>
+                        <button type="button" class="btn btn-lg py-2" style="background: #92E3A9; color: #263238; font-family: Merriweather; font-style: normal; font-weight: bold; font-size: 16px;">Vreau să fac teme pentru alții</button>
+                   
+                
+                
+                </div>
+
+                <div class="col-sm-12 col-lg-6 px-5">
+
+                    <img src="images/desen.svg" alt="fata care scrie" class="img-fluid mx-auto d-block">
+
+                </div>
+
+            </div>
+
+         </div>
+
+        <div class="container-fluid" style="background-color: #92E3A9;">
+
+            <div class="row">
+
+                 <div class="col d-flex justify-content-center py-5">
+                    <p>
+                           <h2 style="font-family: Merriweather; font-style: normal; font-weight: 900; font-size: 40px;">Cum funcționează?
+                           </h2>
+
+                    </p>
+                  
+                 </div>
+           
+            </div>
+
+            <div class="row py-5 d-flex justify-content-center">
+            
+                <div class="col-lg-4 px-5">
+
+                    <img src="images/Group 6.svg" alt="1" class="img-fluid float-left">
+
+                    <div class="px-5 ml-3">
+                        <p style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 16px;">
+                        Realizezi un cont pe platformă în care introduci câteva detalii personale (nu vă faceți griji, profesorii nu or să va descopere) și materiile la care ai nevoie de ajutor.
+                        </p>
+                    </div>
+                
+                </div>
+
+                <div class="col-lg-4 px-5">
+
+                    <img src="images/Group 7.svg" alt="2" class="img-fluid float-left">
+
+                    <div class="px-5 ml-3">
+                        <p style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 16px;">
+                        Străbați platforma în căutare de studenți care oferă servicii la materiile dorite sau te rogi la Sfântul 5 să primești mesaj de la cineva care te descoperă și e dispus să te salveze.
+                        </p>
+                    </div>
+                    
+                
+                </div>
+
+                <div class="col-lg-4 px-5">
+
+                    <img src="images/Group 8.svg" alt="3" class="img-fluid float-left">
+
+                    <div class="px-5 ml-3">
+                        <p style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 16px;">
+                        După ce stabiliți o sumă care oricum este de zeci de ori mai mare decât la alte universități, aștepti ca noul vostru amic să vă încarce soluția pe platformă. Jumătate din plată oferiți în avans, restul după ce vă vedeți intrat în examen.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="card shadow bg-white rounded my-5" style="width: 60rem">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6 pb-5 px-5 pt-3">
+                             <h2 class="card-title" style="font-family: Merriweather; font-style: normal; font-weight: bold;">Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă?</h2>
+                            <div class="pr-5 py-4 mr-5">
+                                <p class="card-text" style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 16px;">Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap.
+                                </p>
+                            </div>
+                              
+                        </div>
+                        
+                        <div class="col-sm-6">
+                             <div class="card-body">
+                                <form>
+
+                                    <div class="form-group">
+                                        <label style="font-family: Merriweather; font-style: normal; font-weight: bold; font-size: 16px;">Nume:</label><br>
+                                        <input type="text" class="form-control" id="fname" name="fname"><br>
+                                        <label style="font-family: Merriweather; font-style: normal; font-weight: bold; font-size: 16px;">Prenume:</label><br>
+                                        <input type="text" class="form-control" id="lname" name="lname"><br>
+                                        <label for="exampleFormControlTextarea1" style="font-family: Merriweather; font-style: normal; font-weight: bold; font-size: 16px;">Înjurătură:</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                                        <input type="submit" value="Trimite" style="background: #263238; color: #92E3A9; font-family: Merriweather; font-style: normal; font-weight: bold; font-size: 16px;">
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="py-3" style="background-color: #263238;">
+
+                <div class="d-flex justify-content-center py-3">
+                    <img src="images/instagram.svg" alt="instagram" class="img-fluid">
+                    <img src="images/twitter.svg" alt="twitter" class="img-fluid">
+                    <img src="images/facebook.svg" alt="facebook" class="img-fluid">
+                </div>
+                
+                
+                <div class="d-flex justify-content-center">
+                     <p style="color: white; font-family: Merriweather; font-style: normal; font-weight: 300; font-size: 15px;">
+                    Copyright 2020 | Cine ne pârăște o mierlește.
+                    </p>
+
+                </div>
+               
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+
+  </body>
+
+</html>
